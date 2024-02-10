@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    padding: 0 2rem 0 2rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    background-color: lightgray;
+    height: 100%;
+}
+
+.content-wrap {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+    /* Add your footer styling here */
+    background-color: black;
+    color: white;
+}
+
+.header-button {
+    display: flex;
+    gap: 10px; 
+}
