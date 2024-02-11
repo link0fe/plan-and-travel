@@ -9,46 +9,50 @@
 <body>
     <div class="content-wrap">
         <header>
-            <div>
-                onTravel
+            <div style="display: flex;">
+                <img src="./assets/images/09b0636d-0f7d-444e-a333-b8bf8d80aa7d (4).svg"/>
+                <p>TripTail</p>
             </div>
             <div class="header-button">
                 <div>
-                    Button1
+                    <button>Button1</button>
                 </div>
                 <div>
-                    Button2
+                    <button>Button2</button>
                 </div>
             </div>
         </header>
         <main>
 
-            <div class="register-card">Content
-                <div>
+            <div class="register-card">
+                <form id="registrationForm" class="registrationForm">
                     <label>Name</label>
-                    <input type="text "class="">
+                    <input type="text "class="register-name">
 
                     <label for="">Surname</label>
-                    <input type="text" class="">
+                    <input type="text" class="register-surname">
 
                     <label for="">Login</label>
-                    <input type="text">
+                    <input type="text" class="register-login">
 
                     <label for="">Email</label>
-                    <input type="email">
+                    <input type="email" class='register-email'>
 
                     <label for="">Password</label>
-                    <input type="password">
+                    <input type="password" class='register-password'>
 
                     <label for="">Repeat Password</label>
-                    <input type="password">
+                    <input type="password" class='register-repassword'>
 
-                    <button>Submit</button>
-                </div>
+                    <button class="register-submit" type="submit">Submit</button>
+                </form>
             </div>
 
         </main>
     </div>
     <footer>xdd</footer>
+
+    <script src="./js/app.js">
+    </script>
 </body>
 </html>
