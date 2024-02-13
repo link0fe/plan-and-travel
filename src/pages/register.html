@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css//styles.css">
+    <title>Register</title>
 </head>
 <body>
     <div class="content-wrap">
         <header>
             <div style="display: flex;">
                 <a href="../index.html">
-                    <img src="./assets/images/logo.svg"/>
+                    <img src="../assets/images/logo.svg"/>
                     <p>TripTail</p>
                 </a>
             </div>
@@ -20,14 +20,20 @@
                     <a href="#">Login</a>
                 </div>
                 <div>
-                    <a href="./pages/register.html">Register</a>
+                    <a href="./register.html">Register</a>
                 </div>
             </div>
         </header>
         <main>
 
-            <div class="login-card">
-                <form id="loginForm" class="loginForm">
+            <div class="register-card">
+                <form id="registrationForm" class="registrationForm">
+                    <label>Name</label>
+                    <input type="text "class="register-name">
+
+                    <label for="">Surname</label>
+                    <input type="text" class="register-surname">
+
                     <label for="">Login</label>
                     <input type="text" class="register-login">
 
@@ -36,6 +42,9 @@
 
                     <label for="">Password</label>
                     <input type="password" class='register-password'>
+
+                    <label for="">Repeat Password</label>
+                    <input type="password" class='register-repassword'>
 
                     <button class="register-submit" type="submit">Submit</button>
                 </form>

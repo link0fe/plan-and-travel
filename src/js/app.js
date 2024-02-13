@@ -17,6 +17,8 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         email: document.getElementsByClassName('register-email')[0].value,
         password: document.getElementsByClassName('register-password')[0].value,
         rePassword: document.getElementsByClassName('register-repassword')[0].value
+
+        
     };
     console.log(registerData)
 });

@@ -27,6 +27,20 @@ main {
     align-items: center;
 }
 
+button {
+    border-radius: 0.5rem;
+}
+
+input {
+    border-radius: 0.5rem;
+    padding: 0 0  0 10px;
+    height: 2rem;
+}
+
+a { 
+    display: flex;
+}
+
 .registrationForm {
     padding: 2rem;
     background-color: #fff; /* Adds background color for form area */
