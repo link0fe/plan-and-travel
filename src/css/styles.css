@@ -24,7 +24,7 @@ main {
     height: 96%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 button {
@@ -84,3 +84,5 @@ footer {
     gap: 10px; 
 }
 
+#map { height: 50%; 
+width: 100%;}
