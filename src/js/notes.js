@@ -33,6 +33,14 @@ form .addEventListener("submit", (e) => {
     Storage.addToStorage(todoArr);
 });
 
+form .addEventListener("reset", (e) => {
+    e.preventDefault();
+    console.log('xdd')
+    UI.clearInput();
+    UI.removeTodo(todoArr.remove);
+    console.log("xdd", todoArr.clear())
+});
+
 class Todo {
     constructor(id, todo) {
         this.id = id;
