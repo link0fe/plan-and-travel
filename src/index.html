@@ -25,6 +25,9 @@
             </div>
             <div class="header-button">
                 <div>
+                    <a href="./pages/notes.html">Notes</a>
+                </div>
+                <div>
                     <a href="./pages/login.html">Login</a>
                 </div>
                 <div>
@@ -33,23 +36,37 @@
             </div>
         </header>
         <main>
-            <div id="map" style="height: 400px;"></div>
+            <div id="map" style="height: 400px;"></div>            
         </main>
     </div>
     <footer>xdd</footer>
 
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
     <script>
         // Initialize Leaflet map
-        var map = L.map('map').setView([51.505, -0.09], 13);
+        var map = L.map('map').setView([56.947435, 24.105377], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        L.marker([51.5, -0.09]).addTo(map)
+        L.marker([56.947435, 24.105377]).addTo(map)
             .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
             .openPopup();
+
+            var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
+
+
+
     </script>
 </body>
 </html>

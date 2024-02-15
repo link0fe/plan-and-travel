@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css//styles.css">
-    <title>Register</title>
+    <link rel="stylesheet" href ="../css/styles.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="content-wrap">
@@ -27,28 +27,20 @@
                 </div>
             </div>
         </header>
-        <main>
 
-            <div class="register-card">
-                <form id="registrationForm" class="registrationForm">
-                    <label for="">Login</label>
-                    <input type="text" class="register-login">
-
-                    <label for="">Email</label>
-                    <input type="email" class='register-email'>
-
-                    <label for="">Password</label>
-                    <input type="password" class='register-password'>
-
-                    <button class="register-submit" type="submit">Login</button>
-                </form>
+    <div class="container">
+        <h1 class="title">Plan to visit</h1>
+        <form class="form" data-form>
+            <input type="text" placeholder="Todo..." data-input/>
+            <button class="btn">Submit</button>
+        </form>
+        <div class="lists" data-lists>
+            <div class="todo">
+                <p></p>
+                <span></span>
             </div>
-
-        </main>
+        </div>
     </div>
-    <footer>xdd</footer>
-
-    <script type="module" src="./js/app.js">
-    </script>
+    <script src="../js/notes.js"></script>
 </body>
 </html>

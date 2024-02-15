@@ -24,7 +24,11 @@ main {
     height: 96%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+}
+
+main .register-card {
+    padding-top: 10%;
+
 }
 
 button {
